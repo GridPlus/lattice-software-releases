@@ -2,6 +2,58 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.10.3
+
+*Published March 17 2021*
+
+**Features:**
+
+* Better detection of the SafeCard. If a SafeCard is inserted when the device boots, it is now detected. If a SafeCard is inserted in a device that is unlocked, the SafeCard now also needs to be unlocked.
+* Various UI improvements such as a new cancel button added to the pairing secret screen.
+* Optional BIP39 password (a.k.a. "25th word") is now allowed when a wallet is generated.
+* ABI updates: ABI_V2 (released in mainnet Dec '20) now supported and tuple types (increasingly utilized by more modern smart contracts) are also now supported.
+* Uniswap router V2 ABI definitions now pre-loaded.
+
+**Bug fixes:**
+* Invalid characters (non-ASCII) now represented with a single square character (🔲)). Previously these characters were either skipped or shown as screen artifacts.
+* Cleanup of invalid `strncat` usage in various places.
+* Fixed derivation of public keys from non-standard paths (i.e. for unknown coin types).
+* Added a missing zero-initialization of buffer.
+
+**Changelog:**
+
+* #1863: Add max PIN length boundary to screen builder (ebd1c94ef1e04aa488b3ea05e776cf8451f96b72)
+* #1861: Fix issue with unlocking the card on insert (0dc251bd73a3ff6a24d9680544bf3d464dac70d0)
+* #1869: Check EVM1 at boot/login and prompt user to unlock SafeCard if one is inserted (daefde01ebd2a380a4cb61249153502e928ac2b7)
+* #1874: Increase number of pairing slots and add pagination to the pairings list screen (b1e2aa9f4f28a00946a0d1f64254874aa1d557ed)
+* #1877: Move compile guards to fix bug (6a2905823d69ac538ecb221023a99f39f1549f81)
+* #1875: Add length boundaries to PIN screens (aa3199150681a5879e002306b9dc5771234c8cb0)
+* #1876: Fixes bugs related to forgetting a wifi network (9446bef511f3aaf87309ae98e0bc0486297e8880)
+* #1878: Fixes bug in resetting wifi credentials after a router reset (6e79e58b4992580c0a842865ad5c006b07bf61bc)
+* #1879: Fixes syntax errors (4f4f82a77e1100edd9c78c2a5f832e89e5c5d4fd)
+* #1880: Adds cancel button to the pairing screen to improve UX (bdfc035b956efa5324ae54018d03bb7c14f07471)
+* #1881: Adds missing mechanism to exit clone card process (e6932bf925157dbfb589adfd0320c99d12f846e4)
+* #1893: Adds compile guards to settings UI (126261d3722c3ff9397d36079da1133ef828cd8f)
+* #1896: Fixes derivation of public keys from non-standard paths (daf93e5a619897b0023b2d9c8a03a7eda0020d00)
+* #1887: Updates lvgl to print square character when unknown character is encountered (5c06bd29dc4d07f481458b579897076b486802d9)
+* #1897: Fixes lvgl update from previous PR (4b220851289f918974b2a136bfee9ef8108e435f)
+* #1882: Fixes several erroneous strcat instances (1877b5dc8f440266302eb44685b5f1bcd2d8a6fb)
+* #1900: Fixes lvgl update again (db1a3d927baa2ddf835497d5974ee3cdcc66afc4)
+* #1895: Updates language on a few screens (91859fd1e409a70d614af38df8df73b62dc77911)
+* #1901: Add tuple support to ABI decoding/printing (f5eadf9662b5e6961e3bbee031e4dd5387a5bdb6)
+* #1910: Fixes off-by-one bug introduced in previous PR (9c95b3b631c0d5089707b5144c2c5b9005599dfd)
+* #1914: Zero-inits pairing secret buffer to avoid screen artifacts (56c4cc99ab4a2ae989d57ce48971d40ce490fd77)
+* #1911: Adds BIP password option to generated wallets (b06f3db9db7d1a31ed03fef440ce2cab181e7557)
+* #1904: Fixes UI hooks in reset Lattice setting (443ae86c7b9a70366608e7dd0a3fdd8d0b14d306)
+* #1912: Bump firmware to v0.10.3 (d6bd538b01ea878030c454dd4cf432cbcde225ed)
+* #1916: Add compile guards to wallet UI (ca449668e5933bb7d693e85d81a6c60002e668cf)
+* #1917: Adds Uniswap router V2 ABI definitions to preload list (863d6cd19fd4de651a1c8f24d8f57e57e62abc07)
+* #1923: Add HSM and GCE versions to welcome screen for easier factory debugging (47183371ffe32964d62107589314351a8773a1a7)
+* #1928: Add optimization to lvgl in order to build release (e95c8ace9afa21dbc0b1ed7a8c91640227771ed2)
+* #1930: Decreases timer on reset router mechanism to better align with GCE reset timing (d9930ee5da0344eefeefbd4a41fbe5af0623825b)
+* 239ab31c52041acc470859c2a449d3411241ca94: Removal of defunct unit tests
+* #1931: Fix mistaken size calculation on screen displaying number of ABI defs loaded (2112031dfa2c52ce521cff4c5dbcbef85b97da26)
+
 ## v0.10.2
 
 *Published Jan 20 2021*
