@@ -2,6 +2,34 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.10.4
+
+*Published March 31 2021*
+
+**Features:**
+
+* Updates `signTransaction` request to allow for requests larger than one frame. Previous limit was 1550 bytes for data (same limit for a `personal_sign`. message). This has now been updated to 1550 bytes + 1x 1500 byte frame for a total of 3050 bytes. (#1945, #1948)
+* Updates the look of the PIN screen, most notably using a larger font for the number buttons. (#1946)
+* Adds BIP32 signer path to transaction request screen (#1971)
+
+**Bug Fixes:**
+
+* Blocks requests while ABI confirmation screen is drawn. This fixes a bug in which encrypted requests could still be made but could not be filled because the ABI confirmation screen was blocking the UI. (#1947)
+* Forces SafeCard unlock before accessing a cached request when the device is unlocked. This fixes a bug that allowed the device to sign a transaction from a SafeCard without requiring the user to unlock that SafeCard first. This bug was only relevant for locked devices with cached requests. (#1949)
+
+**Changelog:**
+
+* #1945: Updates `signTransaction` route and all ETH transaction middleware to handle chained requests, effectively increasing the maximum transaction size by using multiple requests.
+* #1948: Increases `extraData` frame size and stack size to support a significantly larger `signTransaction` payload under the new mechanism.
+* #1947: Adds hook into ABI commit screen preventing inbound encrypted requests while the screen is drawn.
+* #1949: Adds more context to system unlock and adds specificity over `home_ui` redirect when tearing down loading screen.
+* #1946: Updates PIN screen to use larger font
+* #1950: Bump to version 0.10.4
+* #1955: Minor code cleanup to adjust comments and remove dead code
+* #1957: Adds missing cache clearing mechanism which should have been included in #1948
+* #1964: Fixes timeout mechanism when resetting router
+* #1971: Prints BIP32 signer path on ETH and ETH_MSG signing request screens
+
 ## v0.10.3
 
 *Published March 17 2021*
