@@ -2,6 +2,35 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.10.5
+
+*Published April 30 2021*
+
+**Features:**
+* Support for EIP712 transactions.
+* Support for derivation paths between 2-5 indices instead of requiring 5 indices.
+* Adds ability to scroll between used addresses on the Lattice UI. Currently only BTC addresses, which have a gap limit, can display more than the root address but more may be added later.
+
+**Bug Fixes:**
+* Add timeout mechanism to PIN screen, which previously blocked transition to the UI sleeping after inactivity.
+* Skip wifi setup step when the Lattice system is reset and the user still has wifi configured.
+* Fixes invalid callback handling which made canceling a seed restore entry more difficult than it needed to be.
+
+**Changelog:**
+
+* Support for derivation paths <5 indices (#1974)
+* Modularize vendor libs and optimize compilation (#1975)
+* Move RLP module to GridPlus handle and swap submodules (#1976)
+* Update address display mechanism to allow scrolling between cached addresses (#1954)
+* Support for EIP712 requests (#1982)
+* Additional keyring support for hardware v3 (#1978)
+* Add missing timeout to PIN screen (#1984)
+* Skip wifi setup when wifi is already set (#1985)
+* Adds support for non-standard EIP712 domain headers since apps are already breaking the standard 😓  (#1991)
+* Adds missing "cancel" callback handler to restore screen (#1995)
+* Replaces invalid header button type on BIP39 password screen (#1996)
+* Hides unnecessary screen builder constants to avoid exporting constants we don't need to export (#1997)
+
 ## v0.10.4
 
 *Published March 31 2021*
