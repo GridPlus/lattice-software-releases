@@ -2,9 +2,9 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
-## v0.10.5
+## v0.10.6
 
-*Published April 30 2021*
+*Published May 3 2021*
 
 **Features:**
 * Support for EIP712 transactions.
@@ -30,6 +30,7 @@ The following document contains a list of all publicly released Lattice firmware
 * Adds missing "cancel" callback handler to restore screen (#1995)
 * Replaces invalid header button type on BIP39 password screen (#1996)
 * Hides unnecessary screen builder constants to avoid exporting constants we don't need to export (#1997)
+* Fixes bug in exporting certain address paths (#2008)
 
 ## v0.10.4
 
