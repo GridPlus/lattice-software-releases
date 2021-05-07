@@ -2,6 +2,24 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.10.7
+
+*Published May 7 20201*
+
+**Features:**
+* Screen to validate authenticity of the Lattice's secure enclave chip. Generates a QR code linking to a gridplus.io page and containing signature + certificate on signer.
+
+**Bug fixes:**
+* Fixes bug in UI callback function that was introduced in previous version
+* Allows for EIP712 edge case that was previously not supported, but is allowable by the spec
+
+**Changelog:**
+* Fixes UI bug introduced in previous version (#2012)
+* Adds screen to validate authenticity of Lattice's secure enclave (#2006)
+* Adjusts screen constants that got mis-aligned (#2015)
+* Adds support for EIP712 edge case related to 0-length parameters (#2016)
+* Additional support for tamper mesh in latest hardware version (#2020)
+
 ## v0.10.6
 
 *Published May 3 2021*
