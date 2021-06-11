@@ -2,6 +2,33 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.10.8
+
+*Publised June 11 2021*
+
+**Features:**
+
+* Updates to Ethereum ABI functionality: new types, updated struct, new files (breaking changes)
+* Support for sending to Bitcoin bech32 addresses (using p2wpkh)
+* Ability to remove SafeCard wallet from firmware UI
+* Allow pre-hashed ETH transactions when data is too large (prints a red warning screen)
+* Various minor updates/fixes
+
+**Changelog:**
+
+* Accounting for ABI edge case where parameter has no name (#2025)
+* Add all non-standard uint ABI types (e.g. uint24) (#2030)
+* Remove gas constraints for ETH transactions (#2033)
+* Add support for sending to bech32 Bitcoin addresses (#2017)
+* Display remaining SafeCard PIN attempts whenever an incorrect PIN is entered (#2038)
+* Add ability to remove wallet on SafeCard from UI (#2045)
+* Various firmware-based changes to ABI structure (breaking change) (#2054)
+* Allow pre-hashed ETH txs when data is too large; red warning screen is displayed (#2051)
+* Update language when asking for optional 25th seed word (i.e. passphrase) (#2056)
+* Revert changes in previous version for skipping wifi setup if SSID exists (#2035)
+* Version bump (#2055)
+* Adds missing display of SafeCard PIN attempts remaining (#2060)
+
 ## v0.10.7
 
 *Published May 7 20201*
