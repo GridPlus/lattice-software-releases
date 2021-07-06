@@ -2,6 +2,24 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.10.9
+
+*Published July 6 2021*
+
+**Features:**
+
+* Displays native unit for non-Ethereum chains in transaction request screen. Supported chain units include: MATIC, BNB, FTM as well as Ethereum testnets Ropsten, Rinkeby, Kovan, and Goerli. All other chains display the unit `?TOKEN` to indicate the chain is unknown (the signing is unaffected).
+* Updates to the ABI parser adding support for signed integer types and fixes an edge case for parsing 0-length `bytes` types.
+
+**Changelog:**
+
+* Display native unit for EVM chain based on `chainId` (#2066)
+* ABI: support signed int types (#2071)
+* ABI decoding edge case: handle 0-length `bytes` types (#2062)
+* Bump to v0.10.9 (#2074)
+* Fix issue introduced in EVM unit display (#2076) 
+* Fix issue introduced in signed int support (#2077)
+
 ## v0.10.8
 
 *Publised June 11 2021*
