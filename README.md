@@ -2,6 +2,18 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.10.10
+
+*Published July 13 2021*
+
+**Features:**
+
+* Allows pre-hashed EIP712 and personal_sign messages in cases where the messages are too large to fit in allocated firmware memory. A warning screen is displayed as is the case for Ethereum transactions, which already support this feature.
+
+**Changelog:**
+
+* Adds pre-hash mechanism for ETH_MSG (#2085)
+
 ## v0.10.9
 
 *Published July 6 2021*
