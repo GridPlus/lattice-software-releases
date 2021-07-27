@@ -2,6 +2,18 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.10.11
+
+*Published July 27 2021*
+
+**Changelog:**
+
+* Adds missing types to EIP712 decoding (#2089)
+* Fixes edge case related to printing ABI markdown of `bytes` types (#2091)
+* Bump version (#2092)
+* Fix compiler warning related to unknown return value (#2098)
+* Shrink code space usage of EIP712 type selection (#2101)
+
 ## v0.10.10
 
 *Published July 13 2021*
