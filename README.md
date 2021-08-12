@@ -2,6 +2,32 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.11.0
+
+*Published August 12 2021*
+
+**Features:**
+
+* Adds support for new Ethereum transaction types (EIP1559 and EIP2930)
+
+**Bug Fixes:**
+
+* Add zero-initialization to parameter only affected by optimization
+* Ensure cases where `chainId` is large work with pre-hashed transaction requests
+* Ensure SafeCard seed always deletes, even when Lattice seed is the same
+
+**Changelog:**
+
+* Fixes zero-initialization bug that only manifests in optimized code (#2078)
+* Fixes edge case where `chainId` is large and also the payload is pre-hashed (#2111)
+* Fixes issue in delete SafeCard seed when SafeCard and Lattice seeds are the same (#2106)
+* Add support for EIP1559 and EIP2930 transaction types (#2112)
+* Optimize remaining firmware code (#2093)
+* Update to v0.11.0 (#2115)
+* Fixes pointer scoping issue in EIP1559 implementation (#2116)
+* Optimize one last file (pairing manager) (#2120)
+* Fix typo in screen header (#2118)
+
 ## v0.10.11
 
 *Published July 27 2021*
