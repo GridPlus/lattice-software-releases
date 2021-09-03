@@ -4,6 +4,16 @@ The following document contains a list of all publicly released Lattice firmware
 
 ## v0.11.0
 
+*Published September 3 2021*
+
+**Changelog:**
+
+* Fixes bug related to wallet state after a router reset (#2128)
+* Fixes edge case related to handling long chainIds for ETH txs and adds AVAX (#2131)
+* Bumps to v0.11.1 (#2132)
+
+## v0.11.0
+
 *Published August 12 2021*
 
 **Features:**
