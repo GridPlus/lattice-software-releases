@@ -2,6 +2,14 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.11.3
+
+*Published October 1 2021*
+
+**Changelog:**
+
+* Updates `extraText`-based option screen drawing to fix edge cases (Updates extraText-based option screen drawing to fix edge cases #2160)
+
 ## v0.11.2
 
 *Published September 7 2021*
