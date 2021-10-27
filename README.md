@@ -2,6 +2,41 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.12.0
+
+*Published October 27 2021*
+
+**Features**
+
+* Adds API to create, fetch, and remove key-value mappings (key and val both max 64 bytes). This will be used for address tags in the near term.
+* Adds determinism to ECDSA signatures using [RFC6979](https://datatracker.ietf.org/doc/html/rfc6979) and [BIP62](https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki). This enables SNARK-based functionality on e.g. ZK-rollups.
+* Removes seed exportability option and makes all SafeCard seeds exportable for better UX and better future proofing.
+
+**Bug Fixes**
+
+* Fixes endianness of `chainId` display on ETH transaction request screen
+* Fixes edge case in BIP39 word suggestion
+* Adds better randomness to message ID
+* Correctly calculates number of states in system module state machine
+
+**Changelog**
+
+* #2122 (Fix various unit tests)
+* #2018 (Fix system state machine rule count)
+* #2121 (Improve BIP39 word suggestion logic)
+* #2123 (Update system restart logic after resetting system and fs)
+* #2031 (Randomize message broker id)
+* #2169 (Refactor message broker module)
+* #2174 (Fix chainID display bug)
+* #2175 (Deprecate non-exportable seed option for wallet setup)
+* #2177 (Update wc module)
+* #2156 (Add kv-files functionality)
+* #2179 (Removes large and redundant buffer)
+* #2180 (Implement deterministic k signatures)
+* #2190 (Add blocking screen to wallet backup workflow to prevent timing issues)
+* #2194 (Add missing sanity check after message broker refactor)
+* #2198 (Fix boolean logic bug in BIP39 word suggestion update)
+
 ## v0.11.4
 
 *Published October 5 2021*
