@@ -2,6 +2,14 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.12.1
+
+*Published October 28 2021*
+
+## Changelog
+
+* (#2203) Fixes issue introduced in falling back to non-exportable card signing
+
 ## v0.12.0
 
 *Published October 27 2021*
