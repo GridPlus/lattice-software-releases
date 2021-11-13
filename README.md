@@ -2,6 +2,14 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.12.3
+
+*Published November 13 2021*
+
+**Changelog**:
+
+*  (#2228) Adds fix introduced in v0.12.2 into a second location
+
 ## v0.12.2
 
 *Published November 8 2021*
