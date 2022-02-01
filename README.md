@@ -1,6 +1,44 @@
 # Lattice Firmware History
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
+## v0.13.1
+
+*Published February 1, 2022*
+
+**Changelog:**
+
+* (#2316) Adds missing handler for requests made against the wrong wallet
+
+## v0.13.0
+
+*Unpublished: v0.13.1 published instead*
+
+**Features:**
+
+* (#2225, #2251) Adds full bech32 support (BTC)
+* (#2253, #2255, #2256, #2252, #2261, #2282, #2285, #2286) UI enhancements and language clarifications
+* (#2248, #2258) Add new error code to enable SDK retry logic
+* (#2268) Allow EVM smart contract deployment
+* (#2262) Allow user to change SafeCard PIN
+
+**Bug fixes:**
+
+* (#2238) Block address tags requests when device is locked
+* (#2257) Fixes edge case to allow empty arrays in EIP712 messages
+* (#2259, #2278) Removes accidental reduction in randomness space for A90 PIN generation
+* (#2296) Fix edge case in nested EIP712 name definitions
+
+**Miscellaneous:**
+
+* (#2279, #2297, #2300, #2301, #2305) Refactor card manager module to improve speed
+* (#2272, #2275) Removes address caching, allowing much faster syncing
+* (#2235, #2249) Adds more `coin_type` options 
+* (#2201) Add ed25519 cryptography
+* (#2264, #2269) Update hard fault handler
+* (#2270, #2276, #2277) Code refactoring
+* (#2232) Update README instructions
+* (#1980, #2267, #2280, #2266, #2265, #2302, #2298) Tools and options for dev builds
+* (#2308) Prerelease 0.13.0 fixes based on pull request feedback
 
 ## v0.12.3
 
@@ -22,7 +60,7 @@ The following document contains a list of all publicly released Lattice firmware
 
 *Published October 28 2021*
 
-## Changelog
+**Changelog:**
 
 * (#2203) Fixes issue introduced in falling back to non-exportable card signing
 
