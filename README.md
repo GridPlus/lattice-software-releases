@@ -2,6 +2,12 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.13.3
+
+*Published February 10, 2022*
+
+* (#2341) Hotfix: Prevents screen from tearing down during clone card process
+
 ## v0.13.2
 
 *Published February 7, 2022*
