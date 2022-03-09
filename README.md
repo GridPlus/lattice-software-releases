@@ -2,6 +2,36 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.14.0
+
+*Published March 9, 2022*
+
+**Features:**
+
+* (#2307, #2367) Adds GET/DELETE API to ABI data for data management
+* (#2339, #2360) Adds generic signing route to remove restrictions on signing requests
+* (#2347)  Allows export of ED25519 and other pubkeys with new flag
+* (#2349) Adds Solana decoder to generic signing
+* (#2350, #2355, #2362) Updates system halt screen to print more readable errors
+
+**Fixes:**
+
+* (#2346) Fixes to card manager events
+* (#2357) Adds missing SafeCard driver unload
+* (#2358) Adds missing unblocking mechanism during clone card process to allow cancellation
+* (#2361) Adds missing lock to QSPI reads during sector erase
+* (#2365) Adds return error converter to allow retries for `sign` requests
+
+**Misc:**
+
+* (#2157) Updates to utils
+* (#2209) Updates wolfcrypt config
+* (#2310) Moves BIP32 derivation logic to its own file
+* (#2311) Adds curve25519
+* (#2354) Increases EIP712 type max size
+* (#2356) Adds better debugging mechanism after halt
+* (#2348) Updates Lattice verification URL to `lattice.gridplus.io`
+
 ## v0.13.3
 
 *Published February 10, 2022*
