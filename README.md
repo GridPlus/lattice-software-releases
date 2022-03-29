@@ -2,6 +2,23 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.14.1
+
+*Published March 29, 2022*
+
+**Features:**
+
+* (#2371) Adds Terra decoder
+* (#2372) Updates general signing route and decoder formats
+* (#2388) Adds encrypted wallet UIDs to return data of `connect` for faster syncing
+* (#2382, #2392) Makes text on all reset screens text
+
+**Fixes:**
+
+* (#2389, #2391) Reverts transaction caching change, forcing a check for a cached transaction every time home UI renders
+* (#2385) Fixes issues with semi-deprecated non-exportable seeds (backport of previous logic)
+* (#2395) Removes bad sanity check
+
 ## v0.14.0
 
 *Published March 9, 2022*
