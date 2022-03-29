@@ -11,7 +11,7 @@ The following document contains a list of all publicly released Lattice firmware
 * (#2371) Adds Terra decoder
 * (#2372) Updates general signing route and decoder formats
 * (#2388) Adds encrypted wallet UIDs to return data of `connect` for faster syncing
-* (#2382, #2392) Makes text on all reset screens text
+* (#2382, #2392) Makes text on all reset screens red
 
 **Fixes:**
 
