@@ -2,6 +2,14 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.14.2
+
+*Published March 30, 2022*
+
+**Fixes:**
+
+* (#2398) Fixes edge case that was blocking a single screen transition
+
 ## v0.14.1
 
 *Published March 29, 2022*
