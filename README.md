@@ -2,6 +2,26 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.15.0
+
+*Published June 21, 2022*
+
+**Features:**
+
+* (#2374, #2415, #2416) Replaces legacy Ethereum signing pathway with a new EVM decoder in the general signing framework.
+* (#2380) Replaces legacy Ethereum ABI API with new just-in-time ABI decoder functionality, allowing the requester to include an ABI definition with the calldata in the transaction request. Also adds a new API for loading such decoders (compiled out in a different PR) ahead of time. This is no longer necessary but has a small benefit of validating param names (function names and param types/ordering are already validated in the ABI definition itself).
+* (#2406) Adds mechanism to arm or disarm the anti-tamper mesh. Forces the user to arm the mesh before a tamper event can be registered. All data remains encrypted and PIN protected regardless of this choice and the configuration can be switched at any time.
+
+**Fixes:**
+
+* (#2404) Fixes non-critical issue related to general signing requests sent to SafeCards with non-exportable seeds
+* (#2405) Add additional check on `purpose` param when determining whether a `coin_type` maps to an Ethereum style address
+
+**Misc:**
+
+* (#2411) Compiles out decoder API and deprecated V0 permissions feature. Neither of these features is necessary and this frees up a significant amount of code space.
+* (#2417) Adds OTP version to device info screen
+
 ## v0.14.2
 
 *Published March 30, 2022*
