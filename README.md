@@ -2,6 +2,14 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.15.1
+
+*Published June 22, 2022*
+
+**Fixes:**
+
+* (#2451) Removes accidental duplicate `0x` prefix for printed EVM addresses
+
 ## v0.15.0
 
 *Published June 21, 2022*
