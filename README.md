@@ -2,6 +2,25 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.15.2
+
+*Published July 6, 2022*
+
+**Fixes:**
+
+* (#2430) Force exit of critical screens when device locks
+* (#2444) Removes no-op cancel button from SafeCard PIN setup
+* (#2455) Ensure mesh "armed" state is checked when first drawing status bar
+* (#2460) Fixes ordering of boot screens to ensure SafeCard PIN is drawn prior to tamper config screen (if applicable)
+* (#2465) Adds more clarifying language to mesh config screen
+* (#2469, #2474, #2475, #2479) Updates to tamper config file lifecycle to ensure proper management of seed at all times
+
+**Misc:**
+
+* (#2439) Disables Terra decoder to save code space (the chain is now defunct)
+* (#2443) Adds firmware version to halt screen
+* (#2458) Re-architects settings bars to be less insane and linearizes the values
+
 ## v0.15.1
 
 *Published June 22, 2022*
