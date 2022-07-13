@@ -2,6 +2,15 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.15.3
+
+*Published July 13, 2022*
+
+**Fixes:**
+
+* (#2486) Fixes display issue EVM values >UINT64_MAX
+* (#2487) Fixes screen timeout issue related to updates by forcing a default value in new set
+
 ## v0.15.2
 
 *Published July 6, 2022*
