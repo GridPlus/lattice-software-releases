@@ -2,6 +2,15 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.15.4
+
+*Published July 15, 2022*
+
+**Fixes:**
+
+* (#2492) Ensures tag rendering in all decoded data situations
+* (#2494) Fixes issue with displaying fixed size arrays in EVM calldata
+
 ## v0.15.3
 
 *Published July 13, 2022*
