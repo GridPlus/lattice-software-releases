@@ -2,7 +2,7 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
-## v0.15.4
+## [v0.15.4](https://github.com/GridPlus/lattice-firmware-history/releases/tag/v0.15.4)
 
 *Published July 15, 2022*
 
