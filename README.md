@@ -2,6 +2,32 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
+## v0.16.0
+
+*Published Septemper 15, 2022*
+
+**Features:**
+
+* (#2419, #2428, #2505, #2523, #2542) Forces confirmation of generated mnemonic phrases unless this option is disabled. This was added to prevent users from being unable to backup phrases.
+* (#2441, #2506) Stores mnemonic in extra data region of supported SafeCard applets (v2.3+)
+* (#2500) Updates WiFi module to reflect usage of Ethernet and cleans up surrounding code
+* (#2519) Adds help screen with QR code link to docs page
+* (#2520) Updates keyboard layout for more readability and ease of use
+* (#2508) Adds support for nested ABI definitions used by e.g. `multicall` patterns
+ 
+**Fixes:**
+
+* (#2497) Fixes broken cancel button
+* (#2502) Fixes typos
+* (#2541) Ensures wifi is cleared from firmware state when router is reset
+
+**Misc:**
+
+* (#2509) Shrinks memory footprint of BIP39 word list
+* (#2526) Adds QR code pointing to ticketing system for system halts
+* (#2532) Updates device setup screen
+* (#2498, #2528, #2529, #2530, #2531, #2535, #2539) Release 0.16.0 cleanup (resulting from testing issues and copy change requests)
+
 ## [v0.15.4](https://github.com/GridPlus/lattice-firmware-history/releases/tag/v0.15.4)
 
 *Published July 15, 2022*
