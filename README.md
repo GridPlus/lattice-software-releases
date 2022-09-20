@@ -2,7 +2,7 @@
 
 The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
-## v0.16.0
+## [HSM v0.16.0](https://github.com/GridPlus/lattice-firmware-releases/releases/tag/hsm-0.16.0)
 
 *Published Septemper 15, 2022*
 
