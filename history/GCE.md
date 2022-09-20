@@ -1,4 +1,4 @@
-# Lattice Firmware Updates
+# Lattice Router Updates (GCE)
 
 > Starting with v0.49.0 we began publishing releases in this repo.
 

@@ -1,6 +1,6 @@
-# Lattice Firmware History
+# Lattice Software Updates
 
-The following document contains a list of all publicly released Lattice firmware updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
+The following document contains a list of all publicly released Lattice software updates. Generally they contain descriptions of major features as well as changelogs of specific pull requests and commits that were added to the codebase in that version.
 
 | Software Type | Symbol | Latest Release | History |
 |:---|:---|:----|:--|

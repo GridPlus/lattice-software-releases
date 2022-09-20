@@ -1,4 +1,4 @@
-# Lattice Firmware Updates
+# Lattice Firmware Updates (HSM)
 
 > Starting with v0.15.4 we began publishing releases to this repo's Release page. Prior releases are still documented but the binaries are unlinked.
 
