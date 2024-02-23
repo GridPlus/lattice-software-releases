@@ -4,10 +4,72 @@
 
 This document lists historical Lattice firmware (HSM) releases and the corresponding changelogs.
 
+### [v0.17.6](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.17.6)
+
+*Published February 1, 2024*
+
+**Features**
+* (#2693) Extra warnings, re-authentication, and internal wallet seed phrase extraction for compatible hardware versions
+* (#2674) Display mnemonic from safecard feature
+
+**Fixes**
+* (#2698) minor text fixes
+* (#2665) Fixes a configuration edge case
+* (#2673) Build environment extension
+* (#2663) Various fixes related to checking the tamper mesh state at boot
+
+### [v.0.17.1](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.17.1)
+
+**Fixes**
+* (#2654) Moves setup complete flag marker to when the user sets a PIN
+
+### [v0.17.0](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.17.0)
+
+**Features**
+* (#2562, #2620) Adds BLS crypto and integrates it into getAddresses and sign routes.
+* (#2608) Adds route to fetch encrypted data, starting with encrypted BLS private keys (using EIP2335)
+* (#2616) Adds ETH2 staking keys (BLS) to wallet addresses screen. Also updates the UI related to those screens.
+
+**Fixes**
+* (#2612) Fixes failure to ABI decode empty struct arrays
+* (#2625) Removes unnecessary block on screen timeouts while system PIN screen is drawn
+* (#2630) Updates all password input prompts to be 100 characters max
+* (#2633, #2634) Addresses PR comments
+
+### [v0.16.5](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.16.5)
+
+**Features**
+* (#2585) Draws (shortened) signer address for EVM transactions in addition to BIP44 path. Also moves Amount to inline metadata
+
+**Fixes**
+* (#2628) Moves some code back to m_text and removes fs operation that may interfere with m_external
+* (#2552) Fixes system PIN setup cancel button flow
+* (#2555) Ensures change SafeCard PIN UI flow is blocked when SafeCard is not inserted
+* (#2586) Rejects pairing request when SafeCard PIN screen is drawn, rather than timing out
+* (#2596) Fixes edge case in Solana transaction building that was auto-rejecting certain payloads
+* (#2602) Fixes edge case in EIP712 request building (zero-length typed arrays)
+* (#2550) Makes settings toggle buttons only refresh text, rather than entire screen
+* (#2561, #2577) Loads static code into m_external to free up active program space
+* (#2571, #2513, #2574, #2597, #2606) Prunes old, unused code related to wallet module
+* (#2556) Signal bootloader only once device startup has finished
+* (#2594) Add warning to update screen copy
+* (#2598, #2599, #2600) Small, unscheduled changes and fixes to release branch
+* (#2603) Bumps version number to 0.16.2
+
+### [v0.16.3](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.16.3)
+
+**Fixes** 
+* (#2623) Add seed to safecard_set_seed to account for copied seeds with passphrases
+
+### [v0.16.1](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.16.1)
+
+**Fixes**
+* (#2557, #2581, #2582) Updates to language and screen text formatting
+* (#2589) Updates new device setup timers to prevent initial router timeout
 
 ### [v0.16.0](https://github.com/GridPlus/lattice-firmware-releases/releases/tag/hsm-0.16.0)
 
-*Published Septemper 15, 2022*
+*Published September 15, 2022*
 
 **Features:**
 
