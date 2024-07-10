@@ -4,5 +4,5 @@ The following document contains a list of all publicly released Lattice software
 
 | Software Type | Symbol | Latest Release | History |
 |:---|:---|:----|:--|
-| Lattice Firmware | HSM | [v0.18.1](https://github.com/GridPlus/lattice-firmware-releases/releases/tag/hsm-0.18.1) | [Link](./history/HSM.md)
+| Lattice Firmware | HSM | [v0.18.2](https://github.com/GridPlus/lattice-firmware-releases/releases/tag/hsm-0.18.2) | [Link](./history/HSM.md)
 | Router | GCE | [v0.49.0](https://github.com/GridPlus/lattice-firmware-releases/releases/tag/gce-0.49.0) | [Link](./history/GCE.md) |
