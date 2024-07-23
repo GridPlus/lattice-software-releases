@@ -4,6 +4,29 @@
 
 This document lists historical Lattice firmware (HSM) releases and the corresponding changelogs.
 
+
+### [v0.18.3](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.18.3)
+
+*Published July 18, 2024*
+
+**Fixes**
+* (#2730) Solana decoder now allows for undefined instruction types
+
+
+### [v0.18.2](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.18.2)
+
+*Published July 10, 2024*
+
+**Features**
+* (#2707) Initial Solana support
+* (#2706) 200 char password (25th word)
+
+**Fixes**
+* (#2717) Hyperliquid fix (affects all contracts with a long name)
+* (#2675) Support for EIP712 BIG_NEG
+* (#2690) Firmware security updates
+* (#2720, #2719, #2723, #2722) Other minor bug fixes
+
 ### [v0.17.6](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.17.6)
 
 *Published February 1, 2024*
