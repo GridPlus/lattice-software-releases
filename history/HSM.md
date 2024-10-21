@@ -4,10 +4,16 @@
 
 This document lists historical Lattice firmware (HSM) releases and the corresponding changelogs.
 
+### [v0.18.5](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.18.5)
+
+*Published October 21, 2024*
+
+**Features**
+* (#2742) Fetch addresses now uses indexes for faster experience
 
 ### [v0.18.4](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.18.4)
 
-*Published July 18, 2024*
+*Published October 4, 2024*
 
 **Fixes**
 * (#2737) Solana derivation paths display fix
