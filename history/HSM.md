@@ -4,6 +4,13 @@
 
 This document lists historical Lattice firmware (HSM) releases and the corresponding changelogs.
 
+### [v0.18.6](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.18.6)
+
+*Published January 31, 2025*
+
+**Features**
+* (#2744) BTC xPub functionality
+
 ### [v0.18.5](https://github.com/GridPlus/lattice-software-releases/releases/tag/hsm-0.18.5)
 
 *Published October 21, 2024*
